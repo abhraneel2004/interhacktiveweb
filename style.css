@@ -18,6 +18,7 @@ html {
     color: rgb(251, 222, 222);
     transition: ease-in-out 400ms;
     font-weight: 10;
+
 }
 
 body {
@@ -170,7 +171,7 @@ nav ul {
     justify-content: center;
 }
 
-li {
+nav li {
     padding-right: 50px;
     /* border: 2px solid white; */
     /* justify-content: center; */
@@ -180,13 +181,13 @@ li {
 
 #event {
     color: rgb(198, 33, 0);
-    background-image: url('./images/eventbackground4.png');
+    background-image: url('./assets/eventbackground4.png');
     width: inherit;
     height: max-content;
     background-repeat: no-repeat;
     padding: 50px;
     background-size: 100%;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 #demo {
@@ -259,7 +260,7 @@ li {
 }
 
 .arrow {
-    background-image: url('./images/arrow.png');
+    background-image: url('./assets/arrow.png');
     /* background-color: blue; */
     width: 438px;
     height: 187px;
@@ -279,19 +280,19 @@ li {
 }
 
 #firstplace {
-    background-image: url('./images/gold.svg');
+    background-image: url('./assets/gold.svg');
     background-size: 100%;
     background-repeat: none;
 }
 
 #secondplace {
-    background-image: url('./images/silver.svg');
+    background-image: url('./assets/silver.svg');
     background-size: 100%;
     background-repeat: none;
 }
 
 #thirdplace {
-    background-image: url('./images/gold.svg');
+    background-image: url('./assets/gold.svg');
     background-size: 100%;
     background-repeat: none;
 }
@@ -362,20 +363,19 @@ li {
 }
 
 #pic1 {
-    background-image: url('./images/techquiscol.svg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #pic2 {
-    background-image: url('./images/stridecol.svg');
+    background-image: url('assets/stridecol.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 
 #pic3 {
-    background-image: url('./images/technocruise.svg');
+    background-image: url('assets/technocruisecol.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -416,42 +416,42 @@ li {
 }
 
 #ui_front {
-    background-image: url('./images/best_ui.svg');
+    background-image: url('./assets/best_ui.svg');
     background-repeat: no-repeat;
     background-size: 100%;
 
 }
 
 #ui_back {
-    background-image: url('./images/ui_back.svg');
+    background-image: url('./assets/ui_back.svg');
     background-repeat: no-repeat;
     transform: rotateY(180deg);
     background-size: 100%;
 }
 
 #girls_front {
-    background-image: url('./images/best_girls.svg');
+    background-image: url('./assets/best_girls.svg');
     background-repeat: no-repeat;
     background-size: 100%;
 
 }
 
 #girls_back {
-    background-image: url('./images/girl_back.svg');
+    background-image: url('./assets/girl_back.svg');
     background-repeat: no-repeat;
     transform: rotateY(180deg);
     background-size: 100%;
 }
 
 #inno_front {
-    background-image: url('./images/best_inno.svg');
+    background-image: url('./assets/best_inno.svg');
     background-repeat: no-repeat;
     background-size: 100%;
 
 }
 
 #inno_back {
-    background-image: url('./images/inno_back.svg');
+    background-image: url('./assets/inno_back.svg');
     background-repeat: no-repeat;
     transform: rotateY(180deg);
     background-size: 100%;
@@ -488,7 +488,7 @@ li {
 
 /* 
 #best_saas{
-    background-image: url('./images/best_saas.svg');
+    background-image: url('./assets/best_saas.svg');
     background-size: 100%;
     background-repeat:none;
 }
@@ -497,14 +497,14 @@ li {
 
 
 #best_git{
-    background-image: url('./images/best_git.svg');
+    background-image: url('./assets/best_git.svg');
     background-size: 100%;
     background-repeat:none;
 }
 
 
 #best_android{
-    background-image: url('./images/best_android.svg');
+    background-image: url('./assets/best_android.svg');
     background-size: 100%;
     background-repeat:none;
 } */
@@ -540,9 +540,12 @@ footer {
     border-bottom: 2px solid black;
 }
 
-#ulgold {
+#ulgold,
+#ulsilver,
+#ulbronze {
+
     /* border: 2px solid gold; */
-    background: linear-gradient(45deg, #F6DB5C, #907604);
+
     min-width: 300px;
     width: 450px;
     border-radius: 20px;
@@ -552,6 +555,16 @@ footer {
 
 }
 
+#ulgold {
+    background: linear-gradient(45deg, #F6DB5C, #907604);
+}
+
+#ulgold li,
+#ulsilver li,
+#ulbronze li {
+    margin-left: 20px;
+    font-size: 1.2vw;
+}
 
 .gold,
 #ulgold li {
@@ -561,11 +574,6 @@ footer {
 #ulsilver {
     /* border: 2px solid gold; */
     background: linear-gradient(45deg, #c2c1be, #5b5a57);
-    border-radius: 20px;
-    padding: 20px;
-    min-width: 300px;
-    width: 450px;
-    flex-direction: column;
 
 }
 
@@ -579,11 +587,6 @@ footer {
 #ulbronze {
     /* border: 2px solid gold; */
     background: linear-gradient(45deg, #F1B573, #B4653F);
-    border-radius: 20px;
-    padding: 20px;
-    min-width: 300px;
-    width: 450px;
-    flex-direction: column;
 
 }
 
@@ -662,23 +665,23 @@ dd {
 }
 
 .insta {
-    background-image: url('./images/icons8-instagram.svg');
+    background-image: url('./assets/icons8-instagram.svg');
 }
 
 .facebook {
-    background-image: url('./images/icons8-facebook.svg');
+    background-image: url('./assets/icons8-facebook.svg');
 }
 
 .twitter {
-    background-image: url('./images/icons8-twitter.svg');
+    background-image: url('./assets/icons8-twitter.svg');
 }
 
 .youtu {
-    background-image: url('./images/icons8-youtube.svg');
+    background-image: url('./assets/icons8-youtube.svg');
 }
 
 .link {
-    background-image: url('./images/icons8-linkedin.svg');
+    background-image: url('./assets/icons8-linkedin.svg');
 }
 
 .contactsc {
@@ -724,10 +727,8 @@ nav li:hover {
     /* text-shadow: 0 0 5px #ffffff51; */
 }
 
-marquee {
-    font-size: 6vh;
-    background-color: #0b3245;
-    margin: 0;
-    height:max-content;
-    padding: 20px 10px;
-}
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
