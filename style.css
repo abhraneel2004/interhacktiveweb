@@ -111,8 +111,6 @@ header {
 #logo {
     width: 10vw;
     height: 2.6839vw;
-    min-width: 95.68px;
-    min-height: 21.68px;
     left: 0px;
     margin-top: 20px;
     margin-left: 50px;
@@ -256,6 +254,9 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 2px solid white; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -734,5 +735,19 @@ nav li:hover {
 }
 
 @media screen and (max-width: 800px) {
-    
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #logo {
+        width: 60vw;
+        height: 16.014vw;
+    }
+
+    .arrow {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
 }
