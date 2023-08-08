@@ -28,6 +28,7 @@ body {
 
 header {
     background-color: #06202d;
+    width: 100%;
 }
 
 .main {
@@ -49,7 +50,7 @@ header {
 .btns1 {
     display: flex;
     justify-content: space-evenly;
-    margin: 40px;
+    margin: 4vw;
 
 }
 
@@ -161,7 +162,7 @@ nav ul {
     display: flex;
     /* justify-content: right; */
     color: #FF0000;
-    padding-top: 30px;
+    padding-top: 4vw;
     height: 10vh;
     list-style-type: none;
     font-weight: normal;
@@ -172,7 +173,7 @@ nav ul {
 }
 
 nav li {
-    padding-right: 50px;
+    padding-right: 5vw;
     /* border: 2px solid white; */
     /* justify-content: center; */
 
@@ -184,17 +185,20 @@ nav li {
     background-image: url('./assets/eventbackground4.png');
     width: inherit;
     height: max-content;
-    background-repeat: no-repeat;
+    min-height: fit-content;
+    /* background-repeat: no-repeat; */
     padding: 50px;
     background-size: 100%;
     margin-bottom: 0;
+
+    /* border: 2px solid white; */
 }
 
 #demo {
     /* border: 2px solid white; */
     height: 8vw;
     display: flex;
-    font-size: 50px;
+    font-size: 4vw;
     justify-content: center;
     align-items: center;
     margin-top: 0;
@@ -216,7 +220,7 @@ nav li {
     padding-top: 50px;
     background-image: linear-gradient(to right, red, rgb(255, 98, 0), rgb(255, 98, 0));
     -webkit-background-clip: text;
-    font-size: 60px;
+    font-size: 4.5vw;
     color: transparent;
 }
 
@@ -464,7 +468,7 @@ nav li {
     text-align: left;
     border: 5px solid red;
     border-radius: 20px;
-    width: 700px;
+    width: 70vw;
     background-image: linear-gradient(45deg, #000, rgb(72, 1, 1), rgb(59, 39, 1));
     font-size: 25px;
 }
@@ -476,6 +480,8 @@ nav li {
     border-radius: 10px;
     border: none;
 }
+
+
 
 #mainform {
     padding: 20px;
@@ -728,7 +734,5 @@ nav li:hover {
 }
 
 @media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-  }
+    
+}
