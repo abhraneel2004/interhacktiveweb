@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-html{
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=Ubuntu+Mono:ital@1&display=swap');
+
+
+html {
+    /* border: 2px solid white; */
+    width: 100%;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
@@ -25,7 +32,6 @@ header {
 .main {
     width: 50vw;
     height: fit-content;
-    /* border: 2px solid white; */
     align-self: center;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.749);
@@ -73,7 +79,7 @@ header {
 
 #btna:hover,
 #btnb:hover {
-    box-shadow: 0 0 5px beige;
+    box-shadow: 0 0 15px beige;
 }
 
 #btnb img {
@@ -112,7 +118,7 @@ header {
     align-self: right;
 }
 
-.logox{
+.logox {
 
     width: 10vw;
     height: 2.6839vw;
@@ -175,10 +181,12 @@ li {
 #event {
     color: rgb(198, 33, 0);
     background-image: url('./images/eventbackground4.png');
-    width: 100%;
-    height: 70vh;
+    width: inherit;
+    height: max-content;
     background-repeat: no-repeat;
-    padding-top: 50px;
+    padding: 50px;
+    background-size: 100%;
+    margin-bottom:0;
 }
 
 #demo {
@@ -205,7 +213,7 @@ li {
 
 .abouttext {
     padding-top: 50px;
-    background-image: linear-gradient(to right, red, red, rgb(255, 98, 0));
+    background-image: linear-gradient(to right, red, rgb(255, 98, 0), rgb(255, 98, 0));
     -webkit-background-clip: text;
     font-size: 60px;
     color: transparent;
@@ -222,7 +230,7 @@ li {
 }
 
 #aboutus p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 10;
 }
 
@@ -247,7 +255,7 @@ li {
 }
 
 .timelinne-text p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .arrow {
@@ -308,6 +316,7 @@ li {
     border-radius: 20px;
 
 }
+
 .cards3 {
     height: 100%;
     width: 100%;
@@ -334,9 +343,11 @@ li {
 }
 
 .frame3 {
-    width: 25vw;
-    height: 16.6667vw;
-    margin:20px 5px;
+    width: 40vw;
+    height: 40vw;
+    min-width: 600px;
+    min-height: 600px;
+    margin: 20px 5px;
     border-radius: 20px;
 
     /* border: 5px solid white; */
@@ -345,118 +356,30 @@ li {
 
 
 
-.eventtexts{
+.eventtexts {
     font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
-#pic1{
-    background-image: url('./images/techqusitive/20220603213243_IMG_4276.jpg');
+#pic1 {
+    background-image: url('./images/techquiscol.svg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#pic2{
-    background-image: url('./images/techqusitive/20220603224610_IMG_4289.jpg');
+#pic2 {
+    background-image: url('./images/stridecol.svg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#pic3{
-    background-image: url('./images/techqusitive/IMG_0948.jpg');
+
+#pic3 {
+    background-image: url('./images/technocruise.svg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#pic4{
-    background-image: url('./images/techqusitive/SAY_3609.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic5{
-    background-image: url('./images/techqusitive/SAY_3611.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic6{
-    background-image: url('./images/techqusitive/SAY_3616.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic13{
-    background-image: url('./images/technocruise1/IMG_0013.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic14{
-    background-image: url('./images/technocruise1/IMG_0032.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic15{
-    background-image: url('./images/technocruise1/IMG_0099.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic16{
-    background-image: url('./images/technocruise1/IMG_0322.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic17{
-    background-image: url('./images/technocruise1/IMG_0333.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic18{
-    background-image: url('./images/technocruise1/IMG_0378.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic7{
-    background-image: url('./images/stride/DSC_4300.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic8{
-    background-image: url('./images/stride/DSC_4306.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic9{
-    background-image: url('./images/stride/DSC_4314.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic10{
-    background-image: url('./images/stride/DSC_4320.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic11{
-    background-image: url('./images/stride/DSC_4325.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#pic12{
-    background-image: url('./images/stride/DSC_4447.JPG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 
 
 
@@ -534,7 +457,7 @@ li {
     background-size: 100%;
 }
 
-.container2{
+.container2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -542,24 +465,24 @@ li {
     border: 5px solid red;
     border-radius: 20px;
     width: 700px;
-    background-image: linear-gradient(45deg, #000, rgb(255, 0, 0), orange);
+    background-image: linear-gradient(45deg, #000, rgb(72, 1, 1), rgb(59, 39, 1));
     font-size: 25px;
 }
 
-.container2 #submit-button{
-    background:red;
+.container2 #submit-button {
+    background: red;
     font-size: 25px;
-    padding:5px;
+    padding: 5px;
     border-radius: 10px;
-    border:none;
+    border: none;
 }
 
-#mainform{
-    padding:20px;
+#mainform {
+    padding: 20px;
 }
 
-#mainform div{
-    margin:20px;
+#mainform div {
+    margin: 20px;
 }
 
 
@@ -599,23 +522,24 @@ footer {
 }
 
 #sponsor ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
     font-weight: 10;
     list-style-type: none;
     margin: 20px;
-    
+
 }
 
-.sponsorframe{
+.sponsorframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-#sponsor li{
+#sponsor li {
     border-bottom: 2px solid black;
 }
+
 #ulgold {
     /* border: 2px solid gold; */
     background: linear-gradient(45deg, #F6DB5C, #907604);
@@ -647,7 +571,7 @@ footer {
 
 
 .silver,
-#ulsilver li{
+#ulsilver li {
     color: #2b2b2a;
 }
 
@@ -665,7 +589,7 @@ footer {
 
 
 .bronze,
-#ulbronze li{
+#ulbronze li {
     color: #3e2c23;
 }
 
@@ -681,84 +605,90 @@ footer {
     box-shadow: 0 0 20px #f1b47391;
 }
 
-details{
-    
+details {
+
     font-size: 30px;
     text-align: left;
-    margin:30px;
+    margin: 30px;
 }
 
-summary{
-    color:rgb(255, 17, 0);
+summary {
+    color: rgb(255, 17, 0);
 }
 
-dd{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+dd {
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 5;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 
-#pic7,#pic8,#pic9,#pic10,#pic11,#pic12{
+#pic7,
+#pic8,
+#pic9,
+#pic10,
+#pic11,
+#pic12 {
     display: block;
     position: absolute;
-    width:30vw;
+    width: 30vw;
     height: 20vw;
 
 }
 
 
 
-.socials{
+.socials {
     display: flex;
     /* border: 2px solid white; */
     width: 400px;
     justify-content: space-between;
-    
+
 }
 
-.socials div{
+.socials div {
     width: 30px;
     height: 30px;
     opacity: 0.6;
     background-size: 100%;
 }
 
-#return{
+#return {
     color: red;
 }
 
-#return:hover{
-    color:rgb(254, 83, 83);
+#return:hover {
+    color: rgb(254, 83, 83);
 }
 
-.insta{
+.insta {
     background-image: url('./images/icons8-instagram.svg');
 }
-.facebook{
+
+.facebook {
     background-image: url('./images/icons8-facebook.svg');
 }
 
-.twitter{
+.twitter {
     background-image: url('./images/icons8-twitter.svg');
 }
 
-.youtu{
+.youtu {
     background-image: url('./images/icons8-youtube.svg');
 }
 
-.link{
+.link {
     background-image: url('./images/icons8-linkedin.svg');
 }
 
-.contactsc{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.contactsc {
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 15px;
     opacity: 0.6;
     text-align: right;
 }
 
-.end{
+.end {
     /* border:2px solid white; */
     display: flex;
     justify-content: space-between;
@@ -795,6 +725,9 @@ nav li:hover {
 }
 
 marquee {
-    font-size: 25px;
+    font-size: 6vh;
     background-color: #0b3245;
+    margin: 0;
+    height:max-content;
+    padding: 20px 10px;
 }
