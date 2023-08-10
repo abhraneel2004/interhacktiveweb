@@ -129,8 +129,12 @@ header {
     margin-left: 50px;
     /* margin-right: 20vw; */
     float: left;
+    /* border:2px solid white; */
 }
 
+.logox img{
+    width: inherit;
+}
 
 #logo2 {
     width: 15vw;
@@ -160,18 +164,18 @@ nav ul {
     display: flex;
     /* justify-content: right; */
     color: #FF0000;
-    padding-top: 4vw;
-    height: 10vh;
+    width: 30vw;
+    /* height: 10vh; */
     list-style-type: none;
     font-weight: normal;
     /* border: 2px solid white; */
     text-align: center;
-
-    justify-content: center;
+    align-items:center;
+    justify-content: space-between;
 }
 
 nav li {
-    padding-right: 5vw;
+    padding-right: 0.5vw;
     /* border: 2px solid white; */
     /* justify-content: center; */
 
@@ -249,7 +253,6 @@ nav li {
 
 
 .f1 {
-    /* border: 5px solid #fff;  */
     /* margin: 50px; */
     display: flex;
     flex-direction: column;
@@ -331,7 +334,7 @@ nav li {
 }
 
 .frame2:hover {
-    box-shadow: 0 0 20px red;
+    /* box-shadow: 0 0 20px red; */
     width: 20.5vw;
     height: 27vw;
 }
@@ -345,14 +348,12 @@ nav li {
 
 
 .frame3:hover {
-    box-shadow: 0 0 20px red;
+    /* box-shadow: 0 0 20px red; */
 }
 
 .frame3 {
     width: 40vw;
     height: 40vw;
-    min-width: 600px;
-    min-height: 600px;
     margin: 20px 5px;
     border-radius: 20px;
 
@@ -396,7 +397,7 @@ nav li {
 .container:hover .card {
     cursor: pointer;
     transform: rotateY(180deg);
-    box-shadow: 0 0 20px red;
+    /* box-shadow: 0 0 20px red; */
 }
 
 .card {
@@ -492,31 +493,6 @@ nav li {
     margin: 20px;
 }
 
-
-/* 
-#best_saas{
-    background-image: url('./assets/best_saas.svg');
-    background-size: 100%;
-    background-repeat:none;
-}
-
-
-
-
-#best_git{
-    background-image: url('./assets/best_git.svg');
-    background-size: 100%;
-    background-repeat:none;
-}
-
-
-#best_android{
-    background-image: url('./assets/best_android.svg');
-    background-size: 100%;
-    background-repeat:none;
-} */
-
-
 .cards:hover {
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.322);
     width: 305px;
@@ -526,6 +502,7 @@ nav li {
 footer {
     height: max-content;
     background: #072230;
+    width:100%;
 }
 
 #sponsor ul {
@@ -646,12 +623,16 @@ dd {
 
 }
 
+textarea {
+    width: 500px;
+    height: 200px;
+}
 
 
 .socials {
     display: flex;
     /* border: 2px solid white; */
-    width: 400px;
+    width: 10vw;
     justify-content: space-between;
 
 }
@@ -729,15 +710,40 @@ dd {
 }
 
 nav li:hover {
-    /* border: 2px solid red; */
+    border-bottom: 2px solid red;
     color: #ff432b;
     /* text-shadow: 0 0 5px #ffffff51; */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1080px) {
+
+    * {
+        font-size: 10px;
+        width:initial;
+    }
+
     nav {
         flex-direction: row;
         justify-content: center;
+        width: inherit;
+        font-size: 5vw;
+        height: max-content;
+        /* border: 2px solid white; */
+    }
+
+    nav li {
+        /* border: 2px solid white; */
+        font-size: 5vw;
+        padding: none;
+
+    }
+
+    nav ul {
+        width: 100%;
+        /* border: 2px solid white; */
+        font-size: 1%;
+        flex-wrap: wrap;
+        
     }
 
     #logo {
@@ -749,5 +755,81 @@ nav li:hover {
         width: 0;
         height: 0;
         visibility: hidden;
+    }
+
+    .main,
+    .container2 {
+        width: 100%;
+        /* border: 5px solid white; */
+        margin: 0;
+    }
+
+    #event {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: inherit;
+        /* border: 2px solid white; */
+    }
+
+    #pic1, #pic2, #pic3{
+        width: 30em;
+        height: 30em;
+        margin:0;
+        /* transform: translateX(-20%); */
+        opacity: 1;
+        padding:0;
+        position:relative;
+        /* transform: t; */
+        /* border: 2px solid pink; */
+    }
+
+    .bigframe2{
+        margin-top: 5vw;
+        margin-bottom:5vw;
+        width:100%;
+        height: 30em;
+        /* background: aqua; */
+        border-radius: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .frame3{
+
+        /* background: rgb(83, 161, 5); */
+        margin:0;
+        /* border:10px solid red; */
+        border-radius: none;
+        width: max-content;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards3{
+        /* border: 5px solid white; */
+        position:initial;
+        margin:0px;
+        border-radius: none;
+    }
+    .eventtexts{
+        font-size: 5vw;
+        margin:0;
+        /* border: 2px solid white; */
+    }
+
+    textarea{
+        width:inherit;
+    }
+    form{
+        width:inherit;
+    }
+
+    footer{
+        width: initial;
+        /* border: 2px solid white; */
+    }
+
+    .contactsc{
+        font-size: 1vw;
     }
 }
