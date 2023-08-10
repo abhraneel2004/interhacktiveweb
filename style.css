@@ -93,6 +93,8 @@ header {
     display: flex;
     /* border:2px solid white; */
     justify-content: center;
+    width:inherit;
+    align-items: center;
 }
 
 
@@ -102,11 +104,6 @@ header {
     font-size: 20px;
 }
 
-#sclogo {
-    width: 121.6px;
-    height: 56.8px;
-    margin-top: 20px;
-}
 
 #logo {
     width: 10vw;
@@ -145,19 +142,28 @@ header {
 #logo2 {
     width: 15vw;
     height: 4.025919vw;
-    min-width: 95.68px;
-    min-height: 21.68px;
+
     left: 0px;
-    margin-top: 20px;
-    margin-left: 50px;
+    /* margin-top: 20px;
+    margin-left: ; */
     /* margin-right: 20vw; */
-    align-self: right;
+    align-items: center;
     /* border: 2px solid white; */
     justify-self: center;
-    margin-right: 20px;
-    padding-right: 20px;
+    margin-right: 3vw;
+    padding-right: 3vw;
     border-right: 5px solid white;
+    /* border: 2px solid red; */
 }
+
+#sclogo {
+    /* width: 8.618vw;   */
+    height: 4.025919vw;
+    margin-top: 3vw;
+    
+}
+
+
 
 nav {
     display: flex;
@@ -188,7 +194,7 @@ nav ul {
     height: max-content;
     min-height: fit-content;
     /* background-repeat: no-repeat; */
-    padding: 50px;
+    padding: 3vw;
     background-size: 100%;
     margin-bottom: 0;
 
@@ -211,14 +217,14 @@ nav ul {
 
 #text {
     text-align: center;
-    padding-top: 50px;
-    font-size: 30px;
+    padding-top: 5vw;
+    font-size: 3vw;
     /* border: 2px solid white; */
     margin-bottom: 0;
 }
 
 .abouttext {
-    padding-top: 50px;
+    padding-top: 4vw;
     background-image: linear-gradient(to right, red, rgb(255, 98, 0), rgb(255, 98, 0));
     -webkit-background-clip: text;
     font-size: 4.5vw;
@@ -596,9 +602,9 @@ footer {
 
 details {
 
-    font-size: 30px;
+    font-size: 2.5vw;
     text-align: left;
-    margin: 30px;
+    margin: 2.5vw;
 }
 
 summary {
@@ -874,6 +880,15 @@ nav li:hover {
         /* box-shadow: 0 0 20px red; */
         width: 62vw;
         height: 85vw;
+    }
+
+    #logo2{
+        width: 45vw;
+        height: 12.077757vw;
+    }
+
+    #sclogo{
+        height: 12.077757vw;
     }
 
 
