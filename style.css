@@ -118,6 +118,12 @@ header {
     align-self: right;
 }
 
+.end {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
 .logox {
 
     width: 10vw;
@@ -125,14 +131,14 @@ header {
     min-width: 95.68px;
     min-height: 21.68px;
     left: 0px;
-    margin-top: 20px;
-    margin-left: 50px;
+    /* margin-top: 20px; */
+    margin-left: 3vw;
     /* margin-right: 20vw; */
     float: left;
     /* border:2px solid white; */
 }
 
-.logox img{
+.logox img {
     width: inherit;
 }
 
@@ -170,17 +176,10 @@ nav ul {
     font-weight: normal;
     /* border: 2px solid white; */
     text-align: center;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
 }
 
-nav li {
-    padding-right: 0.5vw;
-    /* border: 2px solid white; */
-    /* justify-content: center; */
-
-
-}
 
 #event {
     color: rgb(198, 33, 0);
@@ -308,6 +307,7 @@ nav li {
 .bigframe {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
@@ -343,6 +343,7 @@ nav li {
     width: 20vw;
     height: 26.667vw;
     border-radius: 20px;
+    margin: 5vw;
 
 }
 
@@ -392,6 +393,7 @@ nav li {
 .container {
     width: 20vw;
     height: 26.6667vw;
+    margin: 5vw;
 }
 
 .container:hover .card {
@@ -502,7 +504,7 @@ nav li {
 footer {
     height: max-content;
     background: #072230;
-    width:100%;
+    width: 100%;
 }
 
 #sponsor ul {
@@ -679,11 +681,7 @@ textarea {
     text-align: right;
 }
 
-.end {
-    /* border:2px solid white; */
-    display: flex;
-    justify-content: space-between;
-}
+
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -719,7 +717,7 @@ nav li:hover {
 
     * {
         font-size: 10px;
-        width:initial;
+        width: initial;
     }
 
     nav {
@@ -728,27 +726,35 @@ nav li:hover {
         width: inherit;
         font-size: 5vw;
         height: max-content;
+        padding-bottom: 1.5vw;
         /* border: 2px solid white; */
     }
 
     nav li {
         /* border: 2px solid white; */
-        font-size: 5vw;
+        font-size: 3.5vw;
         padding: none;
+        justify-content: space-around;
+        margin-right: 0;
+        margin-left: 0;
+
 
     }
 
     nav ul {
-        width: 100%;
+        width: 85%;
         /* border: 2px solid white; */
-        font-size: 1%;
         flex-wrap: wrap;
-        
+        padding: vw;
+        /* background-color: aqua; */
+
     }
 
     #logo {
         width: 60vw;
         height: 16.014vw;
+        margin-left: 0;
+        margin-top:5vw;
     }
 
     .arrow {
@@ -768,35 +774,39 @@ nav li:hover {
         padding-left: 10px;
         padding-right: 10px;
         width: inherit;
+        height: max-content;
         /* border: 2px solid white; */
     }
 
-    #pic1, #pic2, #pic3{
+    #pic1,
+    #pic2,
+    #pic3 {
         width: 30em;
         height: 30em;
-        margin:0;
+        margin: 0;
         /* transform: translateX(-20%); */
         opacity: 1;
-        padding:0;
-        position:relative;
+        padding: 0;
+        position: relative;
         /* transform: t; */
         /* border: 2px solid pink; */
     }
 
-    .bigframe2{
+    .bigframe2 {
         margin-top: 5vw;
-        margin-bottom:5vw;
-        width:100%;
+        margin-bottom: 5vw;
+        width: 100%;
         height: 30em;
         /* background: aqua; */
         border-radius: none;
         display: flex;
         justify-content: space-evenly;
     }
-    .frame3{
+
+    .frame3 {
 
         /* background: rgb(83, 161, 5); */
-        margin:0;
+        margin: 0;
         /* border:10px solid red; */
         border-radius: none;
         width: max-content;
@@ -805,31 +815,66 @@ nav li:hover {
         justify-content: center;
     }
 
-    .cards3{
+    .cards3 {
         /* border: 5px solid white; */
-        position:initial;
-        margin:0px;
+        position: initial;
+        margin: 0px;
         border-radius: none;
     }
-    .eventtexts{
+
+    .eventtexts {
         font-size: 5vw;
-        margin:0;
+        margin: 0;
         /* border: 2px solid white; */
     }
 
-    textarea{
-        width:inherit;
-    }
-    form{
-        width:inherit;
+    textarea {
+        width: inherit;
     }
 
-    footer{
+    form {
+        width: inherit;
+    }
+
+    footer {
         width: initial;
         /* border: 2px solid white; */
     }
 
-    .contactsc{
+    .contactsc {
         font-size: 1vw;
     }
+
+    .socials div {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .socials {
+        display: inline-flex;
+        justify-content: center;
+        /* border: 2px solid white; */
+    }
+
+    .logox {
+        width: 30vw;
+        height: 8vw;
+        /* border: 2px solid white; */
+    }
+
+    .frame2,
+    .container {
+        width: 60vw;
+        height: 80vw;
+        border-radius: 20px;
+
+    }
+
+    .frame2:hover {
+        /* box-shadow: 0 0 20px red; */
+        width: 62vw;
+        height: 85vw;
+    }
+
+
 }
